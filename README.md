@@ -1,2 +1,3 @@
-# mitibos_akseleratorius
-Projektas Zizui mitybos akseleratoriaus puslapis su mokėjimais
+# Quasar App
+
+> WIP
