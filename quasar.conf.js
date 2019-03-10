@@ -21,7 +21,7 @@ module.exports = function (ctx) {
       scopeHoisting: true,
       // vueRouterMode: 'history',
       // vueCompiler: true,
-      // gzip: true,
+      gzip: true,
       // analyze: true,
       // extractCSS: false,
       extendWebpack (cfg) {
@@ -75,10 +75,10 @@ module.exports = function (ctx) {
       // workboxPluginMode: 'InjectManifest',
       // workboxOptions: {},
       manifest: {
-        // name: 'Quasar App',
-        // short_name: 'Quasar-PWA',
-        // description: 'Best PWA App in town!',
-        display: 'standalone',
+        name: 'Mitybos akseleratorius',
+        short_name: 'Mityba',
+        description: 'Vladimas Zizas SUREGULIUOK SAVO MITYBĄ BE DIDELIŲ PASTANGŲ TIK PER 2 VAL.!  "MITYBOS AKSELERATORIUS" PRAKTINIAI MOKYMAI',
+        display: 'fullscreen',
         orientation: 'portrait',
         background_color: '#ffffff',
         theme_color: '#027be3',
