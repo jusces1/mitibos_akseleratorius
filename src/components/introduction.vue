@@ -1,6 +1,6 @@
 <template>
-    <div class="flex items-center justify-center intro">
-      <div class="normal-text-size color-semi-black">
+    <div class="flex items-center justify-center">
+      <div class="normal-text-size color-semi-black container">
         <section>
           <b class="big-text-size color-white">SUREGULIUOK SAVO MITYBĄ BE DIDELIŲ PASTANGŲ TIK PER 2 VAL.! </b >
           <br />
@@ -30,9 +30,12 @@ export default {
 </script>
 
 <style scoped>
-.intro {
+
+.container {
+  max-width: 100%;
   text-align: center;
 }
+
 .button {
   background-color: #3BB796;
   color: white;

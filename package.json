@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "Projektas Vladimui Zizui mitybos akseleratorius su paysera mokėjimais",
   "productName": "mitybos_akseleratorius_zizas",
-  "cordovaId": "org.cordova.quasar.app",
   "author": "Justas Česnauskas",
   "private": true,
   "scripts": {

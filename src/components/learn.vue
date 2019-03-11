@@ -1,8 +1,8 @@
 <template>
-    <div >
+    <div class="flex justify-center">
       <div class="learn-container">
         <div class="know-parts">
-          <div class="flex justify-center">
+          <div class="column">
             <div class="box paddings">
               <b class="paragraphs-size color-white ">MAISTINGOSIOS <br/>MEDŽIAGOS</b>
               <div class="color-white paragraph mm ">
@@ -16,7 +16,7 @@
                 <li>druska</li>
               </div>
             </div>
-           <div class="circle-1" >1</div>
+           <div class="circle blue-color" >1</div>
           </div>
           <div class="box">
             <div class="paddings">
@@ -33,7 +33,7 @@
               </div>
               <b class="paragraphs-size color-white  ">AR SKAIČIUOJATE <br /> KALORIJAS?</b>
             </div>
-            <div class="circle-2" >2</div>
+            <div class="circle orange-color" >2</div>
           </div>
           <div class="box">
             <div class="paddings">
@@ -49,10 +49,11 @@
                   <li>druska</li>
               </div>
             </div>
-            <div class="circle-2" >3</div>
+            <div class="circle green-color" >3</div>
           </div>
         </div>
       </div>
+      <q-btn class="green-color button">Noriu sau skirti šias 2 val!</q-btn>
     </div>
 </template>
 
@@ -63,11 +64,26 @@ export default {
 </script>
 
 <style scoped>
-.circle-1 {
-    color: antiquewhite;
-    margin-top: -10px;
+.circle {
+    color: white;
+    border-radius: 50%;
+    margin-top: -12%;
     width: 65px;
     height: 65px;
+    margin-left: 40%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 65px;
+}
+.blue-color {
+    background-color: #0080ff;
+}
+.orange-color {
+  background-color: #ff8040;
+}
+.green-color {
+  background-color: #3BB796;
+  margin-top: 0%;
 }
 .paddings {
   padding: 50px;
@@ -81,6 +97,8 @@ export default {
 .box {
   border: 1px solid white;
   width: 300px;
+  height: 400px;
+  margin-right: 50px;
 }
 .learn-container {
   padding: 50px;
@@ -117,5 +135,10 @@ li {
   justify-content: space-between;
   text-align: center;
   margin-top: 50px;
+}
+.button {
+  color: white;
+  font-size: 30px;
+  height: 50px;
 }
 </style>
