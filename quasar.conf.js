@@ -27,8 +27,8 @@ module.exports = function (ctx) {
       extendWebpack (cfg) {
         cfg.module.rules.push({
           enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
+          test: /\.json$/,
+          loader: 'json-loader',
           exclude: /node_modules/
         })
       }

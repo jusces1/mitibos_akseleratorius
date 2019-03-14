@@ -1,5 +1,5 @@
 <template>
-    <div class="flex container">
+    <div class="container">
       <div class="biger-box big-text-size color-semi-black">
       <b class="large-text-size">LIFE ACADEMY</b><br/>
       www.lifeacademy.lt<br/>
@@ -19,15 +19,44 @@ export default {
 }
 </script>
 
-<style>
-.biger-box {
-  width: 60%;
-  padding: 5px;
-  text-align: center;
+<style scoped>
+@media only screen and (max-width: 700px) {
+  .container {
+    display: inline-block;
+    width: 100%;
+  }
+  .biger-box {
+    width: 100%;
+    text-align: center;
+  }
+  .smaller-box{
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+  }
 }
-.smaller-box{
-  width: 40%;
-  padding: 2%;
-  text-align: right;
+@media only screen and (min-width: 701px) {
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  .biger-box {
+    width: 60%;
+    text-align: center;
+  }
+  .smaller-box{
+    width: 40%;
+    padding: 2%;
+    text-align: right;
+  }
+  .large-text-size {
+    font-size: 35px !important;
+  }
+  .big-text-size {
+    font-size: 20px !important;
+  }
+  .paragraphs-size {
+    font-size: 15px !important;
+  }
 }
 </style>

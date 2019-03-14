@@ -1,7 +1,7 @@
 <template>
     <div class="doubts-container">
       <div class="column-1">
-        <b class="color-white headers-text-size">Abejoji, ar <br /> išgirsi kažką naujo?</b>
+        <b class="color-white headers-text-size text-head">Abejoji, ar <br /> išgirsi kažką naujo?</b>
         <div class="line" />
         <p class="color-white paragraphs-size paragraph">
           Mano paties istorija prasidėjo nuo didelio entuziazmo ir meilės<br/>
@@ -22,7 +22,7 @@
          <picture >
           <source media="(max-width: 650px)" srcset="../statics/images/zizas.png">
           <source media="(max-width: 465px)" srcset="../statics/images/zizas.png">
-          <img src="../statics/images/zizas.png" alt="Flowers" style="width:100%; height: 85%;">
+          <img src="../statics/images/zizas.png" alt="Flowers" class="foto">
         </picture>
       </div>
     </div>
@@ -34,15 +34,47 @@ export default {
 }
 </script>
 
-<style>
-.doubts-container {
-  display: flex;
+<style scoped>
+@media only screen and (max-width: 320px) {
+  .column-1 {
+    padding: 25px;
+  }
 }
-.column-1 {
-  width: 70%;
-  padding: 50px;
+@media only screen and (max-width: 1200px) {
+  .doubts-container {
+    display: inline-block;
+  }
+  .column-1 {
+    width: 100%;
+    padding: 35px;
+  }
+  .column-2 {
+    width: 100%;
+  }
+  .foto {
+    width: 100%;
+    height: 85%;
+  }
 }
-.column-2 {
-  width: 40%;
+@media only screen and (min-width: 501px ) and ( max-width: 1200px) {
+  .foto {
+    width: 50%;
+    float: right;
+  }
+}
+@media only screen and (min-width: 1201px ) {
+  .doubts-container {
+    display: flex;
+  }
+  .column-1 {
+    width: 100%;
+    padding: 35px;
+  }
+  .column-2 {
+    width: 100%;
+  }
+  .foto {
+    width: 100%;
+  }
 }
 </style>

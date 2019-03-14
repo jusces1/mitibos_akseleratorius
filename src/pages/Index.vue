@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <introduction class="introduction" />
+    <introduction class="introduction items-center" />
     <howOrganizmWorks class="howOrganizmWorks"/>
     <whatYouWillLearn class="whatYouWillLearn" />
     <reviews class="reviews" />
@@ -18,20 +18,89 @@
   height: 5px;
   background-color: rgb(211, 179, 121);
 }
-.normal-text-size {
-  font-size: 25px;
+.introduction {
+  height: 100vh;
+  background: #f4f2f2;
 }
-.paragraphs-size {
-  font-size: 20px;
+@media only screen and (max-width: 320px) {
+  .normal-text-size {
+    font-size: 15px;
+  }
+  .paragraphs-size {
+    font-size: 13px;
+  }
+  .big-text-size {
+    font-size: 16px;
+  }
+  .headers-text-size {
+    font-size: 20px;
+  }
+  .reviews {
+    height: 80vh;
+  }
 }
-.big-text-size {
-  font-size: 35px;
+@media only screen and (min-width: 321px ) and ( max-width: 500px) {
+  .normal-text-size {
+    font-size: 17px;
+  }
+  .paragraphs-size {
+    font-size: 15px;
+  }
+  .big-text-size {
+    font-size: 19px;
+  }
+  .headers-text-size {
+    font-size: 25px;
+  }
+  .reviews {
+    height: 80vh;
+  }
 }
-.headers-text-size {
-  font-size: 45px;
+
+@media only screen and (min-width: 501px ) and ( max-width: 700px) {
+  .normal-text-size {
+    font-size: 20px;
+  }
+  .paragraphs-size {
+    font-size: 17px;
+  }
+  .big-text-size {
+    font-size: 22px;
+  }
+  .headers-text-size {
+    font-size: 30px;
+  }
+  .reviews {
+    height: 95vh;
+  }
 }
-.large-text-size {
-  font-size: 55px;
+
+@media only screen and (min-width: 701px )  {
+  .normal-text-size {
+    font-size: 25px;
+  }
+  .paragraphs-size {
+    font-size: 20px;
+  }
+  .big-text-size {
+    font-size: 30px;
+  }
+  .headers-text-size {
+    font-size: 35px;
+  }
+  .reviews {
+    height: 100vh;
+  }
+}
+@media only screen and (min-width: 1600px )  {
+  .introduction {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 1500px )  {
+  .paragraphs-size {
+    font-size: 20px !important;
+  }
 }
 .color-white {
   color: white;
@@ -42,31 +111,22 @@
 .color-semi-black {
   color: #2F2F2F;
 }
-.introduction {
-  height: 70vh;
-  background-image: linear-gradient(to bottom, #ffa408, #f8b23a, #ffb639, #ffe8be, #ffffff);
-}
-.howOrganizmWorks {
-  height: 60vh;
-}
+
 .whatYouWillLearn {
-  height: 70vh;
   background-color: #F0F1F2;
-}
-.reviews {
-  height: 90vh;
 }
 .haveDoubts {
   background-color: #3BB796;
-  height: 50vh;
 }
 .learn {
-  height: 70vh;
   background-image: linear-gradient( rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.822) ), url('../statics/images/popular-healthy-foods.jpg');
   background-size: cover;
 }
 .pageFooter {
   height: 10vh;
+}
+.large-text-size {
+  font-family: 'Segoe UI Emoji';
 }
 </style>
 

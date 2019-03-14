@@ -1,9 +1,10 @@
 <template>
-    <div class="flex justify-center">
-      <div class="learn-container">
+    <div class="text">
+      <b class="color-white headers-text-size ">SEMINARO METU JŪS SUŽINOSITE</b>
+      <div class="learn-container ">
         <div class="know-parts">
-          <div class="column">
-            <div class="box paddings">
+          <div class="box">
+            <div class="paddings">
               <b class="paragraphs-size color-white ">MAISTINGOSIOS <br/>MEDŽIAGOS</b>
               <div class="color-white paragraph mm ">
                 <li>baltymai</li>
@@ -16,7 +17,6 @@
                 <li>druska</li>
               </div>
             </div>
-           <div class="circle blue-color" >1</div>
           </div>
           <div class="box">
             <div class="paddings">
@@ -33,7 +33,6 @@
               </div>
               <b class="paragraphs-size color-white  ">AR SKAIČIUOJATE <br /> KALORIJAS?</b>
             </div>
-            <div class="circle orange-color" >2</div>
           </div>
           <div class="box">
             <div class="paddings">
@@ -49,7 +48,6 @@
                   <li>druska</li>
               </div>
             </div>
-            <div class="circle green-color" >3</div>
           </div>
         </div>
       </div>
@@ -64,45 +62,113 @@ export default {
 </script>
 
 <style scoped>
-.circle {
+.green-color {
+  background-color: #3BB796;
+}
+@media only screen and (max-width: 700px) {
+  .text {
+    text-align: center;
+    padding: 20px 0px;
+  }
+  .paragraph {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    line-height: 150%;
+  }
+  .paddings {
+    padding: 50px;
+  }
+  .box {
+    border: 1px solid white;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 50px;
+  }
+  .know-parts {
+    text-align: center;
+    padding: 20px;
+  }
+  .button {
+    color: white;
+    font-size: 18px;
+  }
+  .circle {
     color: white;
     border-radius: 50%;
-    margin-top: -12%;
+    margin-top: -10%;
     width: 65px;
     height: 65px;
-    margin-left: 40%;
+    margin-left: 35%;
     text-align: center;
     vertical-align: middle;
     line-height: 65px;
+  }
+  .orange-color {
+    background-color: #ff8040;
+    margin-top: -3%;
+  }
+}
+@media only screen and (min-width: 501px ) and ( max-width: 700px) {
+  .know-parts {
+    text-align: center;
+    padding: 80px;
+  }
+  .text {
+    text-align: center;
+    padding: 20px 10px;
+  }
+  .box {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 701px ) {
+  .box {
+    border: 1px solid white;
+    width: 50%;
+    height: 350px;
+    margin-bottom: 50px;
+  }
+  .know-parts {
+    text-align: center;
+  }
+  .text {
+    text-align: center;
+    padding: 20px 20px;
+  }
+  .box {
+    height: 300px;
+    max-width: 320px;
+    padding: 20px 10px;
+  }
+  .know-parts {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .paragraph {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    line-height: 150%;
+    padding-left: 20px;
+  }
+  .button {
+    color: white;
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 1000px )  {
+  .text {
+    text-align: center;
+    padding: 20px 50px;
+  }
 }
 .blue-color {
-    background-color: #0080ff;
+  background-color: #0080ff;
 }
-.orange-color {
-  background-color: #ff8040;
-}
-.green-color {
-  background-color: #3BB796;
-  margin-top: 0%;
-}
-.paddings {
-  padding: 50px;
-}
-.paragraph {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: left;
-  line-height: 150%;
-}
-.box {
-  border: 1px solid white;
-  width: 300px;
-  height: 400px;
-  margin-right: 50px;
-}
-.learn-container {
-  padding: 50px;
-}
+
 li {
   list-style: none;
 }
@@ -129,16 +195,5 @@ li {
   display: inline-block;
   width: 1em;
   margin-left: -1em;
-}
-.know-parts {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  margin-top: 50px;
-}
-.button {
-  color: white;
-  font-size: 30px;
-  height: 50px;
 }
 </style>
