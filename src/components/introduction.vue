@@ -2,9 +2,9 @@
     <div class="main-container flex  items-center">
         <div class="container-left flex justify-center items-center">
           <picture class="logo">
-            <source media="(max-width: 650px)" srcset="../statics/images/logo-accscelerator.png">
-            <source media="(max-width: 465px)" srcset="../statics/images/logo-accscelerator.png">
-            <img src="../statics/images/logo-accscelerator.png" alt="" class="logo">
+            <source media="(max-width: 650px)" srcset="../statics/images/logo-accscelerator.svg">
+            <source media="(max-width: 465px)" srcset="../statics/images/logo-accscelerator.svg">
+            <img src="../statics/images/logo-accscelerator.svg" alt="" class="logo">
           </picture>
         </div>
         <div class="container-right">

@@ -22,6 +22,9 @@
   height: 100vh;
   background: #f4f2f2;
 }
+.headers-text-size {
+  font-family: 'Segoe UI';
+}
 @media only screen and (max-width: 320px) {
   .normal-text-size {
     font-size: 15px;
@@ -37,6 +40,9 @@
   }
   .reviews {
     height: 80vh;
+  }
+  .introduction {
+    height: 100%;
   }
 }
 @media only screen and (min-width: 321px ) and ( max-width: 500px) {
@@ -55,6 +61,9 @@
   .reviews {
     height: 80vh;
   }
+  .introduction {
+    height: 100%;
+  }
 }
 
 @media only screen and (min-width: 501px ) and ( max-width: 700px) {
@@ -72,6 +81,9 @@
   }
   .reviews {
     height: 95vh;
+  }
+  .introduction {
+    height: 100%;
   }
 }
 
@@ -106,7 +118,7 @@
   color: white;
 }
 .color-grey {
-  color: rgb(83, 83, 83);
+  color: rgb(91, 91, 91);
 }
 .color-semi-black {
   color: #2F2F2F;
