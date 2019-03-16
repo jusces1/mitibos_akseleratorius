@@ -1,12 +1,15 @@
 <template>
     <div class="text">
-      <b class="color-white headers-text-size ">SEMINARO METU JŪS SUŽINOSITE</b>
+      <div class="fit flex justify-center">
+      <div class="headers-text-size main-header">Seminaro metu jūs sužinosite</div>
+      <div class="line" />
+      </div>
       <div class="learn-container ">
         <div class="know-parts">
           <div class="box">
             <div class="paddings">
-              <b class="paragraphs-size color-white ">MAISTINGOSIOS <br/>MEDŽIAGOS</b>
-              <div class="color-white paragraph mm ">
+              <div class="normal-text-size flex justify-center"><div class="card-head">MAISTINGOSIOS <br/>MEDŽIAGOS </div><img src="../statics/images/nutrition.svg" alt="Flowers" class="icon"></div>
+              <div class="paragraph mm ">
                 <li>baltymai</li>
                 <li>angliavandeniai</li>
                 <li>riebalai</li>
@@ -20,24 +23,24 @@
           </div>
           <div class="box">
             <div class="paddings">
-              <b class="paragraphs-size  color-white  ">HORMONAI</b>
-              <div class="color-white  paragraph h">
+              <div class="normal-text-size flex justify-center"><div class="card-head"> HORMONAI</div><img src="../statics/images/ph.svg" alt="Flowers" class="icon"></div>
+              <div class=" paragraph h">
                 <li>testosteronas</li>
                 <li>estrogenas</li>
                 <li>insulinas</li>
               </div>
-              <b class="paragraphs-size color-white  ">PH BALANSAS</b>
-              <div class=" color-white  paragraph h">
+              <div class="normal-text-size ">PH BALANSAS</div>
+              <div class="paragraph h">
                 <li>šarmai</li>
                 <li>rūgštys</li>
               </div>
-              <b class="paragraphs-size color-white  ">AR SKAIČIUOJATE <br /> KALORIJAS?</b>
+              <div class="normal-text-size">AR SKAIČIUOJATE <br /> KALORIJAS?</div>
             </div>
           </div>
           <div class="box">
             <div class="paddings">
-              <b class="paragraphs-size color-white ">MITYBOS PLANAS</b>
-              <div class="color-white  paragraph mp">
+              <div class="normal-text-size flex justify-center"><div class="card-head">MITYBOS PLANAS</div> <img src="../statics/images/dietplan.svg" alt="Flowers" class="icon"></div>
+              <div class="paragraph mp">
                   <li>baltymai</li>
                   <li>angliavandeniai</li>
                   <li>riebalai</li>
@@ -65,6 +68,23 @@ export default {
 .green-color {
   background-color: #3BB796;
 }
+.card-head {
+  margin-right: 5px;
+  width: 100%;
+
+}
+.text {
+  text-align: center;
+  max-width: 1600px;
+  margin:auto;
+}
+.main-header {
+  width: 100%;
+}
+.icon {
+  height: 50px;
+  margin-top: 10px;
+}
 @media only screen and (max-width: 700px) {
   .text {
     text-align: center;
@@ -77,75 +97,53 @@ export default {
     line-height: 150%;
   }
   .paddings {
-    padding: 50px;
+    padding: 0 50px;
   }
   .box {
-    border: 1px solid white;
     width: 100%;
-    height: 350px;
     margin-bottom: 50px;
   }
   .know-parts {
     text-align: center;
-    padding: 20px;
+    margin: 10px;
   }
   .button {
     color: white;
     font-size: 18px;
   }
-  .circle {
-    color: white;
-    border-radius: 50%;
-    margin-top: -10%;
-    width: 65px;
-    height: 65px;
-    margin-left: 35%;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 65px;
-  }
-  .orange-color {
-    background-color: #ff8040;
-    margin-top: -3%;
-  }
 }
 @media only screen and (min-width: 501px ) and ( max-width: 700px) {
   .know-parts {
     text-align: center;
-    padding: 80px;
+    margin: 60px;
   }
   .text {
     text-align: center;
     padding: 20px 10px;
   }
-  .box {
-    height: 300px;
-  }
 }
 @media only screen and (min-width: 701px ) {
-  .box {
-    border: 1px solid white;
-    width: 50%;
-    height: 350px;
-    margin-bottom: 50px;
-  }
+
   .know-parts {
     text-align: center;
+  }
+  .normal-text-size {
+    font-size: 20px;
   }
   .text {
     text-align: center;
     padding: 20px 20px;
   }
   .box {
-    height: 300px;
     max-width: 320px;
-    padding: 20px 10px;
+    width: 50%;
+    margin: 0px 2px;
+    margin-bottom: 50px;
   }
   .know-parts {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    margin-top: 50px;
   }
   .paragraph {
     padding-top: 5px;
@@ -162,7 +160,9 @@ export default {
 @media only screen and (min-width: 1000px )  {
   .text {
     text-align: center;
-    padding: 20px 50px;
+  }
+  .box {
+    margin: 30px 50px;
   }
 }
 .blue-color {
@@ -195,5 +195,11 @@ li {
   display: inline-block;
   width: 1em;
   margin-left: -1em;
+}
+.box {
+  border: 0.5px solid #dcdcdc;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0px 7px #f3f3f3c7;
 }
 </style>

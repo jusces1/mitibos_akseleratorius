@@ -159,6 +159,11 @@ button {
     padding: 30px;
   }
 }
+@media only screen and ( min-width: 1000px) {
+  .main-container {
+    padding: 70px;
+  }
+}
 @media only screen and ( min-width: 600px) and ( max-height: 600px)    {
   .container-left {
     width: 50%;

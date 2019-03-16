@@ -2,7 +2,7 @@
     <div class="container">
       <div class="biger-box big-text-size color-semi-black">
       <b class="large-text-size">LIFE ACADEMY</b><br/>
-      www.lifeacademy.lt<br/>
+      <a class="color-semi-black" href="https://www.lifeacademy.lt">www.lifeacademy.lt</a><br/>
       </div>
       <div class="smaller-box color-grey paragraphs-size">
         vadimas@zizas.lt<br/>
@@ -20,6 +20,11 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  padding: 5px;
+  height: 100%;
+  background-color: #f4f2f2
+}
 @media only screen and (max-width: 700px) {
   .container {
     display: inline-block;
@@ -46,7 +51,7 @@ export default {
   }
   .smaller-box{
     width: 40%;
-    padding: 2%;
+    padding: 1%;
     text-align: right;
   }
   .large-text-size {

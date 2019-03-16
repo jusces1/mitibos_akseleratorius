@@ -1,70 +1,45 @@
 <template>
     <div class="flex justify-center what-you-learn-container">
       <div class="align-center ">
-        <b class="color-semi-black headers-text-size">Ką sužinosi šių praktinių mokymų metu?</b>
+        <div class="color-semi-black headers-text-size">Ką sužinosi šių praktinių mokymų metu?</div>
         <div class="line" />
         <div class="know-parts">
           <div class="box">
-            <picture>
-              <source media="(max-width: 650px)" srcset="../statics/images/imgUpload.png">
-              <source media="(max-width: 465px)" srcset="../statics/images/imgUpload.png">
-              <img src="../statics/images/imgUpload.png" alt="Flowers" style="width: 200px;">
-            </picture>
+            <img src="../statics/images/nutrition.svg" alt="Flowers" class="icon">
             <br/>
-            <b class="normal-text-size headings">MAISTINGOSIOS MEDŽIAGOS</b>
+            <b class="normal-text-size color-grey">MAISTINGOSIOS MEDŽIAGOS</b>
             <p class="paragraphs-size color-grey paragraph">
-              Pagaliau suprasi, kurios maistingosios <br/>
-              medžiagos kenkia ir kurios padeda<br/>
-              Tavo organizmui: baltymai,<br/>
-              angliavandeniai, riebalai, kalorijos,<br/>
-              saldikliai, vanduo, druska – šie daug<br/>
-              kartų girdėtų žodžiai įgaus naują<br/>
-              prasmę. Įrodysiu, kad lieknėjant<br/>
-              nereikia skaičiuoti jokių kalorijų ir kad<br/>
-              riebalai mažai ką bendro turi su<br/>
+              Pagaliau suprasi, kurios maistingosios 
+              medžiagos kenkia ir kurios padeda
+              Tavo organizmui: baltymai,
+              angliavandeniai, riebalai, kalorijos,
+              saldikliai, vanduo, druska – šie daug
+              kartų girdėtų žodžiai įgaus naują
+              prasmę. Įrodysiu, kad lieknėjant
+              nereikia skaičiuoti jokių kalorijų ir kad
+              riebalai mažai ką bendro turi su
               nereikalingais kilogramais.
             </p>
           </div>
           <div class="box">
-            <picture>
-              <source media="(max-width: 650px)" srcset="../statics/images/suits.png">
-              <source media="(max-width: 465px)" srcset="../statics/images/suits.png">
-              <img src="../statics/images/suits.png" alt="Flowers" style="width: 200px;">
-            </picture>
+            <img src="../statics/images/ph.svg" alt="Flowers" class="icon">
             <br/>
-            <b class="normal-text-size headings">pH BALANSAS HORMONAI</b>
+            <b class="normal-text-size color-grey">pH BALANSAS, HORMONAI</b>
             <p class="paragraphs-size color-grey paragraph">
-              Pagaliau suprasi, kurios maistingosios <br/>
-              medžiagos kenkia ir kurios padeda<br/>
-              Tavo organizmui: baltymai,<br/>
-              angliavandeniai, riebalai, kalorijos,<br/>
-              saldikliai, vanduo, druska – šie daug<br/>
-              kartų girdėtų žodžiai įgaus naują<br/>
-              prasmę. Įrodysiu, kad lieknėjant<br/>
-              nereikia skaičiuoti jokių kalorijų ir kad<br/>
-              riebalai mažai ką bendro turi su<br/>
-              nereikalingais kilogramais.
+              Laimingas žmogus orientuojasi į ilgalaikę perspektyvą ir sveikatingumą, 
+              todėl seminaro metu plačiau papasakosiu apie šarmų ir rūgščių pusiausvyros 
+              svarbą: kas tai yra, kaip tai veikia ir ką tai duoda. Ar žinojai, kad teisinga 
+              pH pusiausvyra beveik visiškai sumažina ligų bei susirgimų tikimybę?
             </p>
           </div>
           <div class="box">
-            <picture>
-              <source media="(max-width: 650px)" srcset="../statics/images/mobile.png">
-              <source media="(max-width: 465px)" srcset="../statics/images/mobile.png">
-              <img src="../statics/images/mobile.png" alt="Flowers" style="width: 200px;">
-            </picture>
+            <img src="../statics/images/dietplan.svg" alt="Flowers" class="icon">
             <br/>
-            <b class="normal-text-size headings">MITYBOS PLANO SUDARYMAS</b>
+            <b class="normal-text-size color-grey">MITYBOS PLANO SUDARYMAS</b>
             <p class="paragraphs-size color-grey paragraph">
-              Pagaliau suprasi, kurios maistingosios <br/>
-              medžiagos kenkia ir kurios padeda<br/>
-              Tavo organizmui: baltymai,<br/>
-              angliavandeniai, riebalai, kalorijos,<br/>
-              saldikliai, vanduo, druska – šie daug<br/>
-              kartų girdėtų žodžiai įgaus naują<br/>
-              prasmę. Įrodysiu, kad lieknėjant<br/>
-              nereikia skaičiuoti jokių kalorijų ir kad<br/>
-              riebalai mažai ką bendro turi su<br/>
-              nereikalingais kilogramais.
+            Papasakosiu Tau viską, ką turi žinoti: galėsi pats lengvai susidaryti mitybos planą ir juo vadovautis likusį gyvenimą.
+             Pateiksiu visus pažangiausius mokslinių tyrimų duomenis ir išmokysiu atsisveikinti su 
+             dietomis bei kitais beverčiais draudimais! Juk nori išsaugosi savo sveikatą, sutaupyti laiką ir pinigus?
             </p>
           </div>
         </div>
@@ -79,9 +54,7 @@ export default {
 </script>
 
 <style scoped>
-.headings {
-  color: rgb(211, 179, 121);
-}
+
 .align-center {
   text-align: -webkit-center;
   width: 100%;
@@ -91,9 +64,22 @@ export default {
   justify-content: space-between;
   margin-top: 50px;
 }
-@media only screen and ( max-width: 320px) {
-  .box {
-    padding: 0px 30px 10px 30px;
+.icon {
+  height: 150px;
+}
+.what-you-learn-container {
+  max-width: 1600px;
+  margin: auto
+}
+
+@media only screen and ( max-width: 330px) {
+  .paragraphs-size  {
+    font-size: 15px;
+  }
+}
+@media only screen and ( min-width: 330px) and ( max-width: 700px) {
+  .paragraphs-size  {
+    font-size: 17px;
   }
 }
 @media only screen and ( max-width: 700px) {
@@ -109,9 +95,12 @@ export default {
   }
   .box {
     border: solid white 2px;
-    padding: 0px 40px 10px 40px;
     margin-bottom: 50px;
   }
+  .icon {
+    height: 110px;
+  }
+ 
 }
 @media only screen and (min-width: 501px ) and ( max-width: 700px) {
   .paragraph {
@@ -131,9 +120,12 @@ export default {
     margin-top: 0px;
   }
   .box {
-    border-right: solid white 1px;
-    padding: 0px 5px 0px 5px;
+    border-right: solid #959595  1px;
+    padding: 0px 15px 0px 15px;
     margin-bottom: 20px;
+  }
+  .icon {
+    height: 90px;
   }
 }
 @media only screen and (min-width: 901px )  {
@@ -150,6 +142,7 @@ export default {
   .box {
     padding: 0px 5px 0px 5px;
     margin-bottom: 20px;
+    width: 25%;
   }
   .align-center {
     padding: 20px;
@@ -159,5 +152,8 @@ export default {
   .align-center {
     padding: 50px;
   }
+}
+.line {
+  width: 50%;
 }
 </style>

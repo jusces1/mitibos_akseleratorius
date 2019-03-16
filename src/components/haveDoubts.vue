@@ -1,9 +1,9 @@
 <template>
     <div class="doubts-container">
       <div class="column-1">
-        <b class="color-white headers-text-size text-head">Abejoji, ar <br /> išgirsi kažką naujo?</b>
+        <div class=" color-grey headers-text-size text-head">Abejoji, ar <br /> išgirsi kažką naujo?</div>
         <div class="line" />
-        <p class="color-white paragraphs-size paragraph">
+        <p class=" color-grey paragraphs-size paragraph">
           Mano paties istorija prasidėjo nuo didelio entuziazmo ir meilės<br/>
           sportui: aktyvus gyvenimo būdas buvo ir yra mano<br/>
           pašaukimas, todėl gavau Lietuvos Edukologijos Universiteto diplomą.<br/>
@@ -35,6 +35,10 @@ export default {
 </script>
 
 <style scoped>
+.doubts-container {
+  max-width: 1600px;
+  margin: auto;
+}
 @media only screen and (max-width: 320px) {
   .column-1 {
     padding: 25px;

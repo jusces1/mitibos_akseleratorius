@@ -56,14 +56,7 @@ export default {
 h2 {
   margin:0;
 }
-.line {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    width: 27%;
-    height: 5px;
-    background-color: rgb(253, 178, 101);
-    margin-bottom: 30px;
-}
+
 .spin {
   animation-name: spin;
   animation-iteration-count: infinite;
@@ -131,6 +124,7 @@ h2 {
   .settings-1 {
     animation-duration: 15000ms;
     float: left;
+    width: 100%;
   }
   .settings-2 {
     animation-duration: 15000ms;
@@ -140,7 +134,7 @@ h2 {
   .foto {
     padding-left: 5%;
     padding-top: 40px;
-    width: 35%;
+    width: 30%;
   }
   .text {
     width: 65%;
@@ -151,7 +145,7 @@ h2 {
     width: 60%;
     margin-bottom: -15%;
     animation-duration: 15000ms;
-    margin-left: 10%;
+    margin-left: 8%;
   }
   .settings-2 {
     width: 50%;

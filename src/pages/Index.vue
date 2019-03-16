@@ -12,11 +12,12 @@
 
 <style>
 .line {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  width: 15%;
-  height: 5px;
-  background-color: rgb(211, 179, 121);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 27%;
+    height: 5px;
+    background-color: rgb(253, 178, 101);
+    margin-bottom: 30px;
 }
 .introduction {
   height: 100vh;
@@ -24,6 +25,10 @@
 }
 .headers-text-size {
   font-family: 'Segoe UI';
+}
+
+.haveDoubts {
+  background: #f4f2f2;
 }
 @media only screen and (max-width: 320px) {
   .normal-text-size {
@@ -123,22 +128,20 @@
 .color-semi-black {
   color: #2F2F2F;
 }
+.reviews {
+  background-color: #f4f2f2;
+}
 
-.whatYouWillLearn {
-  background-color: #F0F1F2;
-}
-.haveDoubts {
-  background-color: #3BB796;
-}
 .learn {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.822) ), url('../statics/images/popular-healthy-foods.jpg');
-  background-size: cover;
 }
 .pageFooter {
   height: 10vh;
 }
 .large-text-size {
   font-family: 'Segoe UI Emoji';
+}
+.whatYouWillLearn {
+  width: 100%;
 }
 </style>
 
