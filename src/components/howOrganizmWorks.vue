@@ -159,7 +159,7 @@ h2 {
     animation-duration: 15000ms;
   }
   .text {
-    width: 60%;
+    width: 55%;
   }
 }
 @keyframes spin {
