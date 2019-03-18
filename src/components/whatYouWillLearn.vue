@@ -5,7 +5,7 @@
         <div class="line" />
         <div class="know-parts">
           <div class="box">
-            <img src="../statics/images/nutrition.svg" alt="Flowers" class="icon">
+            <img src="../statics/images/nutrition.svg" alt="nutriotions" class="icon">
             <br/>
             <b class="normal-text-size color-grey">MAISTINGOSIOS MEDŽIAGOS</b>
             <p class="paragraphs-size color-grey paragraph">
@@ -22,7 +22,7 @@
             </p>
           </div>
           <div class="box">
-            <img src="../statics/images/ph.svg" alt="Flowers" class="icon">
+            <img src="../statics/images/ph.svg" alt="pH balanse" class="icon">
             <br/>
             <b class="normal-text-size color-grey">pH BALANSAS, HORMONAI</b>
             <p class="paragraphs-size color-grey paragraph">
@@ -33,7 +33,7 @@
             </p>
           </div>
           <div class="box">
-            <img src="../statics/images/dietplan.svg" alt="Flowers" class="icon">
+            <img src="../statics/images/dietplan.svg" alt="diet plan" class="icon">
             <br/>
             <b class="normal-text-size color-grey">MITYBOS PLANO SUDARYMAS</b>
             <p class="paragraphs-size color-grey paragraph">

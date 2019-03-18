@@ -8,7 +8,7 @@
         <div class="know-parts">
           <div class="box">
             <div class="paddings">
-              <div class="normal-text-size flex justify-center"><div class="card-head">MAISTINGOSIOS <br/>MEDŽIAGOS </div><img src="../statics/images/nutrition.svg" alt="Flowers" class="icon"></div>
+              <div class="normal-text-size flex justify-center"><div class="card-head">MAISTINGOSIOS <br/>MEDŽIAGOS </div><img src="../statics/images/nutrition.svg" alt="nutritions" class="icon"></div>
               <div class="paragraph mm ">
                 <li>baltymai</li>
                 <li>angliavandeniai</li>
@@ -23,7 +23,7 @@
           </div>
           <div class="box">
             <div class="paddings">
-              <div class="normal-text-size flex justify-center"><div class="card-head"> HORMONAI</div><img src="../statics/images/ph.svg" alt="Flowers" class="icon"></div>
+              <div class="normal-text-size flex justify-center"><div class="card-head"> HORMONAI</div><img src="../statics/images/ph.svg" alt="pH balance" class="icon"></div>
               <div class=" paragraph h">
                 <li>testosteronas</li>
                 <li>estrogenas</li>
@@ -39,7 +39,7 @@
           </div>
           <div class="box">
             <div class="paddings">
-              <div class="normal-text-size flex justify-center"><div class="card-head">MITYBOS PLANAS</div> <img src="../statics/images/dietplan.svg" alt="Flowers" class="icon"></div>
+              <div class="normal-text-size flex justify-center"><div class="card-head">MITYBOS PLANAS</div> <img src="../statics/images/dietplan.svg" alt="diet plan" class="icon"></div>
               <div class="paragraph mp">
                   <li>baltymai</li>
                   <li>angliavandeniai</li>
@@ -201,5 +201,8 @@ li {
   padding: 40px;
   border-radius: 25px;
   box-shadow: 0px 7px #f3f3f3c7;
+}
+.box:hover {
+  transform: scale(1.01);
 }
 </style>

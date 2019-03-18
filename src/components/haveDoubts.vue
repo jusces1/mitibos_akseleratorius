@@ -20,9 +20,10 @@
       </div>
       <div class="column-2">
          <picture >
-          <source media="(max-width: 650px)" srcset="../statics/images/zizas.png">
-          <source media="(max-width: 465px)" srcset="../statics/images/zizas.png">
-          <img src="../statics/images/zizas.png" alt="Flowers" class="foto">
+          <source media="(max-width: 1000px)" srcset="../statics/images/zizas@05x.png">
+          <source media="(min-width: 1000px) and (max-width: 1200px)" srcset="../statics/images/zizas@75x.png">
+          <source media="(min-width: 1200px)" srcset="../statics/images/zizas.png">
+          <img src="../statics/images/zizas.png" alt="Zizas image" class="foto">
         </picture>
       </div>
     </div>
@@ -62,8 +63,11 @@ export default {
 }
 @media only screen and (min-width: 501px ) and ( max-width: 1200px) {
   .foto {
-    width: 50%;
+    width: 55%;
     float: right;
+  }
+  .doubts-container {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 1201px ) {

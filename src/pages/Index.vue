@@ -1,11 +1,19 @@
 <template>
   <q-page>
     <introduction class="introduction items-center" />
+    <q-page-sticky position="bottom-right" :offset="[18, 18]">
+      <q-btn
+        v-back-to-top
+        round
+        class="scroll-top"
+        icon="keyboard_arrow_up"
+      />
+    </q-page-sticky>
     <howOrganizmWorks class="howOrganizmWorks"/>
     <whatYouWillLearn class="whatYouWillLearn" />
-    <reviews class="reviews" />
     <haveDoubts class="haveDoubts"/>
     <learn class="learn" />
+    <reviews class="reviews" />
     <pageFooter class="pageFooter" />
   </q-page>
 </template>
@@ -26,7 +34,10 @@
 .headers-text-size {
   font-family: 'Segoe UI';
 }
-
+.scroll-top {
+  background-color: #FB9F3A;
+  color: white;
+}
 .haveDoubts {
   background: #f4f2f2;
 }
@@ -129,10 +140,7 @@
   color: #2F2F2F;
 }
 .reviews {
-  background-color: #f4f2f2;
-}
-
-.learn {
+  padding-top: 50px;
 }
 .pageFooter {
   height: 10vh;

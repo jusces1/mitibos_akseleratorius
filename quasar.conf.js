@@ -11,15 +11,15 @@ module.exports = function (ctx) {
     ],
     extras: [
       ctx.theme.mat ? 'roboto-font' : null,
-      'material-icons' // optional, you are not bound to it
+      'material-icons', // optional, you are not bound to it
       // 'ionicons',
       // 'mdi',
-      // 'fontawesome'
+      'fontawesome'
     ],
     supportIE: true,
     build: {
       scopeHoisting: true,
-      // vueRouterMode: 'history',
+      vueRouterMode: 'history',
       // vueCompiler: true,
       gzip: true,
       // analyze: true,
@@ -54,10 +54,13 @@ module.exports = function (ctx) {
         'QListHeader',
         'QItem',
         'QItemMain',
-        'QItemSide'
+        'QItemSide',
+        'QPageSticky'
       ],
       directives: [
-        'Ripple'
+        'Ripple',
+        'ScrollFire',
+        'BackToTop'
       ],
       // Quasar plugins
       plugins: [
@@ -72,11 +75,11 @@ module.exports = function (ctx) {
       pwa: false
     },
     pwa: {
-      // workboxPluginMode: 'InjectManifest',
+      workboxPluginMode: 'InjectManifest',
       // workboxOptions: {},
       manifest: {
         name: 'Mitybos akseleratorius',
-        short_name: 'Mityba',
+        short_name: 'Zizas_MA',
         description: 'Vladimas Zizas SUREGULIUOK SAVO MITYBĄ BE DIDELIŲ PASTANGŲ TIK PER 2 VAL.!  "MITYBOS AKSELERATORIUS" PRAKTINIAI MOKYMAI',
         display: 'fullscreen',
         orientation: 'portrait',

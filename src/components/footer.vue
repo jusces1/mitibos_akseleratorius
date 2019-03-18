@@ -23,7 +23,8 @@ export default {
 .container {
   padding: 5px;
   height: 100%;
-  background-color: #f4f2f2
+  background-color: white;
+  border-top: 1px solid #d7d7d7;
 }
 @media only screen and (max-width: 700px) {
   .container {
@@ -53,6 +54,7 @@ export default {
     width: 40%;
     padding: 1%;
     text-align: right;
+    margin-right: 80px;
   }
   .large-text-size {
     font-size: 35px !important;

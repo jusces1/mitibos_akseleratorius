@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container" > 
        <div class="text">
         <h2 class="headers-text-size color-grey head">
           Ar tikrai žinai, kaip veikia tavo organizmas?
@@ -16,16 +16,8 @@
         </p>
        </div>
        <div class="foto">
-          <picture>
-            <source media="(max-width: 650px)" srcset="../statics/images/settings.svg">
-            <source media="(max-width: 465px)" srcset="../statics/images/settings.svg">
-            <img src="../statics/images/settings.svg" alt="Flowers" class="settings-1 spin">
-          </picture>
-           <picture>
-            <source media="(max-width: 650px)" srcset="../statics/images/settings.svg">
-            <source media="(max-width: 465px)" srcset="../statics/images/settings.svg">
-            <img src="../statics/images/settings.svg" alt="Flowers" class="settings-2 spin-back">
-          </picture>
+          <img src="../statics/images/settings.svg" alt="spinning settigns icon" class="settings-1 spin">
+          <img src="../statics/images/settings.svg" alt="spinning settigns icon" class="settings-2 spin-back">
        </div>
     </div>
 </template>
