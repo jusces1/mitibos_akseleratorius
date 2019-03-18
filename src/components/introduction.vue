@@ -16,7 +16,7 @@
           <p class="color-grey paragraphs-size">2019.02.26 Dalyvauk gyvai! Negali atvykti? Žiūrėk įrašą</p>
           <p class="color-grey paragraphs-size gift display">+ Mitybos plano sudarymo instrukcijos ir mokymų medžiaga!!</p>
           <button data-cta="+ Mitybos plano sudarymo instrukcijos ir mokymų medžiaga!!">
-            Pasinaudoti pasiūlimu
+            Pasinaudoti pasiūlymu!
           </button>
         </div>
     </div>

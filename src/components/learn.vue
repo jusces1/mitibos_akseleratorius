@@ -1,7 +1,7 @@
 <template>
     <div class="text">
       <div class="fit flex justify-center">
-      <div class="headers-text-size main-header">Seminaro metu jūs sužinosite</div>
+      <div class="headers-text-size main-header">Seminaro metu jūs sužinosite:</div>
       <div class="line" />
       </div>
       <div class="learn-container ">
