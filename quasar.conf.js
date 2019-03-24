@@ -55,12 +55,15 @@ module.exports = function (ctx) {
         'QItem',
         'QItemMain',
         'QItemSide',
-        'QPageSticky'
+        'QPageSticky',
+        'QModal',
+        'QInput'
       ],
       directives: [
         'Ripple',
         'ScrollFire',
-        'BackToTop'
+        'BackToTop',
+        'CloseOverlay'
       ],
       // Quasar plugins
       plugins: [
@@ -79,7 +82,7 @@ module.exports = function (ctx) {
       // workboxOptions: {},
       manifest: {
         name: 'Mitybos akseleratorius',
-        short_name: 'Zizas_MA',
+        short_name: 'Seminaras',
         description: 'Vladimas Zizas SUREGULIUOK SAVO MITYBĄ BE DIDELIŲ PASTANGŲ TIK PER 2 VAL.!  "MITYBOS AKSELERATORIUS" PRAKTINIAI MOKYMAI',
         display: 'fullscreen',
         orientation: 'portrait',

@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <introduction class="introduction items-center" />
+    <introduction class="introduction items-center" @pay="pay"/>
     <q-page-sticky position="bottom-right" :offset="[18, 18]">
       <q-btn
         v-back-to-top
@@ -12,7 +12,7 @@
     <howOrganizmWorks class="howOrganizmWorks"/>
     <whatYouWillLearn class="whatYouWillLearn" />
     <haveDoubts class="haveDoubts"/>
-    <learn class="learn" />
+    <learn class="learn" @pay="pay" />
     <reviews class="reviews" />
     <pageFooter class="pageFooter" />
   </q-page>
@@ -161,7 +161,13 @@ import whatYouWillLearn from '../components/whatYouWillLearn'
 import haveDoubts from '../components/haveDoubts'
 import learn from '../components/learn'
 import pageFooter from '../components/footer'
-
+import md5 from 'js-md5'
+const encodeDataToURL = (data) => {
+    return Object
+      .keys(data)
+      .map(value => `${value}=${encodeURIComponent(data[value])}`)
+      .join('&');
+}
 export default {
   name: 'mainPage',
   components: {
@@ -172,6 +178,27 @@ export default {
     haveDoubts,
     learn,
     pageFooter
+  },
+  methods: {
+    pay () {
+      let date = new Date()
+      const paramsArray = {
+        projectid: 138506,
+        orderid: 'MITSEM' + date.getMonth() + '' + date.getDate() + '' + date.getHours() + '' + date.getMinutes() + '' + date.getSeconds(),
+        accepturl: window.location.href,
+        cancelurl: window.location.href,
+        callbackurl: window.location.href,
+        version: '1.6',
+        amount: 4700,
+        currency: 'EUR',
+        country: 'LT',
+        test: 1
+      }
+      let url = encodeDataToURL(paramsArray)
+      let encoded = window.btoa(url)
+      const sign = md5(encoded + '105890ae17da7c441bd2dd0dee06a748')
+      window.open(`https://www.paysera.com/pay?data=${encoded}&sign=${sign}`, '_self')
+    }
   }
 }
 </script>

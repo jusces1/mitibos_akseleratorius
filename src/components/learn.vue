@@ -1,14 +1,14 @@
 <template>
     <div class="text">
       <div class="fit flex justify-center">
-      <div class="headers-text-size main-header">Seminaro metu jūs sužinosite:</div>
+      <div class="headers-text-size main-header">Seminaro metu sužinosi:</div>
       <div class="line" />
       </div>
       <div class="learn-container ">
         <div class="know-parts">
           <div class="box">
             <div class="paddings">
-              <div class="normal-text-size flex justify-center"><div class="card-head">MAISTINGOSIOS <br/>MEDŽIAGOS </div><img src="../statics/images/nutrition.svg" alt="nutritions" class="icon"></div>
+              <div class="normal-text-size flex justify-center"><div class="card-head"><img src="../statics/images/nutrition.svg" alt="nutritions" class="icon"><br />MAISTINGOSIOS <br/>MEDŽIAGOS </div></div>
               <div class="paragraph mm ">
                 <li>baltymai</li>
                 <li>angliavandeniai</li>
@@ -23,7 +23,7 @@
           </div>
           <div class="box">
             <div class="paddings">
-              <div class="normal-text-size flex justify-center"><div class="card-head"> HORMONAI</div><img src="../statics/images/ph.svg" alt="pH balance" class="icon"></div>
+              <div class="normal-text-size flex justify-center"><img src="../statics/images/ph.svg" alt="pH balance" class="icon"><div class="card-head"> HORMONAI</div></div>
               <div class=" paragraph h">
                 <li>testosteronas</li>
                 <li>estrogenas</li>
@@ -39,7 +39,7 @@
           </div>
           <div class="box">
             <div class="paddings">
-              <div class="normal-text-size flex justify-center"><div class="card-head">MITYBOS PLANAS</div> <img src="../statics/images/dietplan.svg" alt="diet plan" class="icon"></div>
+              <div class="normal-text-size flex justify-center"><img src="../statics/images/dietplan.svg" alt="diet plan" class="icon"><div class="card-head">MITYBOS PLANAS</div> </div>
               <div class="paragraph mp">
                   <li>baltymai</li>
                   <li>angliavandeniai</li>
@@ -54,7 +54,7 @@
           </div>
         </div>
       </div>
-      <q-btn class="green-color button">Noriu sau skirti šias 2 val!</q-btn>
+      <q-btn class="green-color button" @click="$emit('pay')">NORIU ŠIAS 2 VAL SKIRTI SAU!</q-btn>
     </div>
 </template>
 
@@ -83,7 +83,7 @@ export default {
 }
 .icon {
   height: 50px;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 @media only screen and (max-width: 700px) {
   .text {

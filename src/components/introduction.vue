@@ -1,23 +1,21 @@
 <template>
     <div class="main-container flex  items-center">
-        <div class="container-left flex justify-center items-center">
-          <picture class="logo">
-            <source media="(max-width: 650px)" srcset="../statics/images/logo-accscelerator.svg">
-            <source media="(max-width: 465px)" srcset="../statics/images/logo-accscelerator.svg">
-            <img src="../statics/images/logo-accscelerator.svg" alt="diet accscelerator logo" class="logo">
-          </picture>
-        </div>
         <div class="container-right">
           <span class="large-text-size">MITYBOS AKSELERATORIUS</span><br />
           <span class="big-text-size">PRAKTINIAI MOKYMAI</span><b class="big-text-size gift">+ DOVANA</b>
           <hr />
           <br />
           <p class="color-grey paragraphs-size">SUREGULIUOK SAVO MITYBĄ BE DIDELIŲ PASTANGŲ TIK PER 2 VALANDAS!</p>
-          <p class="color-grey paragraphs-size">2019.02.26 Dalyvauk gyvai! Negali atvykti? Žiūrėk įrašą</p>
+          <p class="color-grey paragraphs-size">2019.02.26 Dalyvauk gyvai! Negali atvykti? Žiūrėk įrašą!</p>
           <p class="color-grey paragraphs-size gift display">+ Mitybos plano sudarymo instrukcijos ir mokymų medžiaga!!</p>
-          <button data-cta="+ Mitybos plano sudarymo instrukcijos ir mokymų medžiaga!!">
-            Pasinaudoti pasiūlymu!
+          <button data-cta="+ Mitybos plano sudarymo instrukcijos ir mokymų medžiaga!!" @click="$emit('pay')">
+            PASINAUDOK PASIŪLYMU!
           </button>
+        </div>
+         <div class="container-left flex justify-center items-center">
+          <div class="logo">
+            <img src="../statics/images/intro.png" alt="diet accscelerator logo" class="logo">
+          </div>
         </div>
     </div>
 </template>
@@ -50,14 +48,15 @@ button {
   box-sizing:border-box;
 }
 .logo {
-  width: 100%;
-  height: 100%;
+  width: 85%;
 }
 .gift {
   color: #47C8AC;
   margin-left: 10px;
 }
-
+.container-right {
+    padding: 30px;
+}
 @media only screen and ( max-width: 700px) {
   .large-text-size {
     font-size: 35px;
@@ -155,12 +154,10 @@ button {
   .container-right {
     width: 50%;
   }
-  .main-container {
-    padding: 30px;
-  }
+ 
 }
 @media only screen and ( min-width: 1000px) {
-  .main-container {
+  .container-right {
     padding: 70px;
   }
 }
