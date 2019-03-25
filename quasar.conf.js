@@ -20,15 +20,15 @@ module.exports = function (ctx) {
     build: {
       scopeHoisting: true,
       vueRouterMode: 'history',
-      // vueCompiler: true,
-      gzip: true,
+      // \vueCompiler: true,
+      // gzip: true,
       // analyze: true,
       // extractCSS: false,
       extendWebpack (cfg) {
         cfg.module.rules.push({
           enforce: 'pre',
-          test: /\.json$/,
-          loader: 'json-loader',
+          test: /\.(js|vue)$/,
+          loader: 'eslint-loader',
           exclude: /node_modules/
         })
       }

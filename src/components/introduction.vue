@@ -78,7 +78,6 @@ button {
   }
 }
 
-
 @media only screen and ( min-width: 701px) and ( max-width: 1009px) {
   .display {
     display: inline-block;
@@ -122,11 +121,9 @@ button {
       animation-direction:alternate;
       animation: hide .5s 1;
     }
-    
     &:hover{
       cursor:pointer;
       animation: bounce .5s 1;
-      
       &:before{
         animation: reveal .5s 1 forwards;
         transition-delay:2s;
@@ -154,7 +151,6 @@ button {
   .container-right {
     width: 50%;
   }
- 
 }
 @media only screen and ( min-width: 1000px) {
   .container-right {

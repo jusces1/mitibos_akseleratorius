@@ -9,7 +9,7 @@
             <br/>
             <b class="normal-text-size color-grey">MAISTINGOSIOS MEDŽIAGOS</b>
             <p class="paragraphs-size color-grey paragraph">
-              Pagaliau suprasi, kurios maistingosios 
+              Pagaliau suprasi, kurios maistingosios
               medžiagos kenkia ir kurios padeda
               Tavo organizmui: baltymai,
               angliavandeniai, riebalai, kalorijos,
@@ -26,9 +26,9 @@
             <br/>
             <b class="normal-text-size color-grey">pH BALANSAS, HORMONAI</b>
             <p class="paragraphs-size color-grey paragraph">
-              Laimingas žmogus orientuojasi į ilgalaikę perspektyvą ir sveikatingumą, 
-              todėl seminaro metu plačiau papasakosiu apie šarmų ir rūgščių pusiausvyros 
-              svarbą: kas tai yra, kaip tai veikia ir ką tai duoda. Ar žinojai, kad teisinga 
+              Laimingas žmogus orientuojasi į ilgalaikę perspektyvą ir sveikatingumą,
+              todėl seminaro metu plačiau papasakosiu apie šarmų ir rūgščių pusiausvyros
+              svarbą: kas tai yra, kaip tai veikia ir ką tai duoda. Ar žinojai, kad teisinga
               pH pusiausvyra beveik visiškai sumažina ligų bei susirgimų tikimybę?
             </p>
           </div>
@@ -38,7 +38,7 @@
             <b class="normal-text-size color-grey">MITYBOS PLANO SUDARYMAS</b>
             <p class="paragraphs-size color-grey paragraph">
             Papasakosiu Tau viską, ką turi žinoti: galėsi pats lengvai susidaryti mitybos planą ir juo vadovautis likusį gyvenimą.
-             Pateiksiu visus pažangiausius mokslinių tyrimų duomenis ir išmokysiu atsisveikinti su 
+             Pateiksiu visus pažangiausius mokslinių tyrimų duomenis ir išmokysiu atsisveikinti su
              dietomis bei kitais beverčiais draudimais! Juk nori išsaugosi savo sveikatą, sutaupyti laiką ir pinigus?
             </p>
           </div>
@@ -100,7 +100,6 @@ export default {
   .icon {
     height: 110px;
   }
- 
 }
 @media only screen and (min-width: 501px ) and ( max-width: 700px) {
   .paragraph {

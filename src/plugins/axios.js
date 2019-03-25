@@ -1,5 +1,6 @@
-import axios from 'axios'
+// import something here
 
-export default ({ Vue }) => {
-  Vue.prototype.$axios = axios
+// leave the export, even if you don't use it
+export default ({ app, router, Vue }) => {
+  // something to do
 }

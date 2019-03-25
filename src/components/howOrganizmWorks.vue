@@ -1,5 +1,5 @@
 <template>
-    <div class="container" > 
+    <div class="container" >
        <div class="text">
         <h2 class="headers-text-size color-grey head">
           Ar tikrai žinai, kaip veikia tavo organizmas?
@@ -52,12 +52,12 @@ h2 {
 .spin {
   animation-name: spin;
   animation-iteration-count: infinite;
-  animation-timing-function: linear; 
+  animation-timing-function: linear;
 }
 .spin-back {
   animation-name: spin-back;
   animation-iteration-count: infinite;
-  animation-timing-function: linear; 
+  animation-timing-function: linear;
 }
 .paragraph {
   width: 80%;

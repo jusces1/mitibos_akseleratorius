@@ -1,20 +1,15 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-page-container>
-      <index />
+      <router-view />
     </q-page-container>
   </q-layout>
 </template>
 
 <script>
-import index from '../pages/Index'
 export default {
-  name: 'MyLayout',
-  components: {
-    index
-  }
+  name: 'MyLayout'
 }
 </script>
-
 <style>
 </style>

@@ -4,7 +4,7 @@
         <div class="color-semi-black headers-text-size">Dalyvių atsiliepimai</div>
         <div class="line" />
       </div>
-      <iframe class="video" title="video" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen 
+      <iframe class="video" title="video" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen
       src="https://www.youtube.com/embed/nQgPvknsgYo">
       </iframe>
     </div>
