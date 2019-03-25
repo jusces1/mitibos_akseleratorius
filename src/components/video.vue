@@ -1,5 +1,5 @@
 <template>
-    <div v-if="open" cclass="cont">
+    <div v-if="open" class="cont">
         <div class="flex justify-center container">
                 <div  class="text"><span> Nepamiršk nusikopijuoti nuorodos, kad video galėtum pažiūrėti ir vėliau! </span>
                 </div>
@@ -40,10 +40,9 @@ export default {
     let data = getUrlVars(window.location.href)['data']
     let encoded = '?' + atob(decodeURIComponent(data))
     let d = {}
-    let parts = encoded.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+    encoded.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
       d[key] = value
     })
-    console.log(parts)
     if (d.projectid === 138506 || d.projectid === '138506') {
       this.open = true
     }
@@ -53,8 +52,7 @@ export default {
 
 <style>
 .video {
-    position:absolute;
-    padding: 30px;
+  position:absolute;
 }
 .cont {
     padding: 30px;
@@ -78,6 +76,7 @@ a {
     width: 100%;
     display: flex;
     padding-left: 15px;
+    padding-top: 20px;
 }
 .text {
     font-size: 20px;
@@ -93,7 +92,7 @@ a {
         width: 100vw;
     }
     .video {
-        padding: 0px;
+      padding: 10px;
     }
 }
 </style>
